@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_screen_for_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cnrn.mycondoapp.MainScreenForUser">
+
+    <LinearLayout
+        android:id="@+id/left_menu"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/top_left_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/top_left_menu" />
+
+        <ImageView
+            android:id="@+id/user_profile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/user_profile"/>
+
+        <ImageView
+            android:id="@+id/add_condo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_menu"/>
+
+        <ImageView
+            android:id="@+id/book_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/book_service"/>
+
+        <ImageView
+            android:id="@+id/book_common_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calendar_common_area"/>
+        <ImageView
+            android:id="@+id/pay_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pay_bill"/>
+        <ImageView
+            android:id="@+id/my_cart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/shopping_cart"/>
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_help"/>
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/left_menu">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Name of the current screen"
+            android:fontFamily="sans-serif"
+            android:gravity="fill_vertical"
+            android:textAlignment="center"
+            android:maxLines="1"/>
+        <ImageView
+            android:id="@+id/alert"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/alert_reminder"/>
+        <ImageView
+            android:id="@+id/email_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/email_message"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/left_menu"
+        android:layout_below="@id/top_menu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/condo_map"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/condo_map"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/condo_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/condo_map"
+                android:textSize="12sp"
+                android:text="Welcome to Las Brisas Condo, the place where you can feel free and comfortable with. We're located in Heredia, Costa Rica. Also you can reach to us at condo@brisas.com. This app will allow us to provide a more personalized attention to any need that is present in your home \n"
+                android:textAlignment="gravity"/>
+            <TextView
+                android:id="@+id/common_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/condo_description"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="Common Services"/>
+
+            <RelativeLayout
+                android:id="@+id/services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/common_services"
+                android:padding="10dp">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:text="Gas"
+                            android:drawableBottom="@drawable/gas_service" />
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:layout_weight="2"
+                            android:text="car wash"
+                            android:drawableBottom="@drawable/car_wash_service"/>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:layout_weight="3"
+                            android:text="wash|clean"
+                            android:drawableBottom="@drawable/washing_service"/>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:layout_weight="4"
+                            android:text="garage"
+                            android:drawableBottom="@drawable/garage_service"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
