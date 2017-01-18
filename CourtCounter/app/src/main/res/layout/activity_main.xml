@@ -17,28 +17,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:padding="16dp"
-                android:text="Team A"
-                android:textColor="#616161"
-                android:textSize="14sp" />
+                style="@style/teamName"
+                android:text="@string/tv_team_a" />
 
             <TextView
                 android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center_horizontal"
-                android:onClick="displayForTeamA"
-                android:paddingBottom="24dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                style="@style/ScoreValues"
+                android:onClick="displayForTeamA" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,22 +32,13 @@
 
                 <TextView
                     android:id="@+id/threePointBasketOfTeamA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="8dp"
-                    android:gravity="center_vertical"
-                    android:text="0" />
+                    style="@style/BasketTypeCounter"
+                    android:layout_marginLeft="8dp" />
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
+                    style="@style/BasketButtons"
                     android:onClick="addThreeForTeamA"
-                    android:text="+3 Points Basket"
-                    android:textSize="@dimen/buttons_size_text" />
+                    android:text="+3 Points Basket" />
             </LinearLayout>
 
             <LinearLayout
@@ -72,22 +48,13 @@
 
                 <TextView
                     android:id="@+id/twoPointBasketOfTeamA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="8dp"
-                    android:gravity="center_vertical"
-                    android:text="0" />
+                    style="@style/BasketTypeCounter"
+                    android:layout_marginLeft="8dp" />
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
+                    style="@style/BasketButtons"
                     android:onClick="addTwoForTeamA"
-                    android:text="+2 Points Bastet"
-                    android:textSize="@dimen/buttons_size_text" />
+                    android:text="+2 Points Basket" />
             </LinearLayout>
 
             <LinearLayout
@@ -97,22 +64,13 @@
 
                 <TextView
                     android:id="@+id/onePointBasketOfTeamA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="8dp"
-                    android:gravity="center_vertical"
-                    android:text="0" />
+                    style="@style/BasketTypeCounter"
+                    android:layout_marginLeft="8dp" />
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
+                    style="@style/BasketButtons"
                     android:onClick="addOneForTeamA"
-                    android:text="+1 Point Basket"
-                    android:textSize="@dimen/buttons_size_text" />
+                    android:text="+1 Point Basket" />
             </LinearLayout>
 
             <LinearLayout
@@ -122,22 +80,13 @@
 
                 <TextView
                     android:id="@+id/foulsOfTeamA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="8dp"
-                    android:gravity="center_vertical"
-                    android:text="0" />
+                    style="@style/BasketTypeCounter"
+                    android:layout_marginLeft="8dp" />
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
+                    style="@style/BasketButtons"
                     android:onClick="addFoulToTeamA"
-                    android:text="+1 Foul"
-                    android:textSize="@dimen/buttons_size_text" />
+                    android:text="+1 Foul" />
             </LinearLayout>
         </LinearLayout>
 
@@ -154,27 +103,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:padding="16dp"
-                android:text="Team B"
-                android:textColor="#616161"
-                android:textSize="14sp" />
+                style="@style/teamName"
+                android:text="@string/tv_team_b" />
 
             <TextView
                 android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center_horizontal"
-                android:onClick="displayForTeamB"
-                android:paddingBottom="24dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                style="@style/ScoreValues"
+                android:onClick="displayForTeamB" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -182,23 +117,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
+                    style="@style/BasketButtons"
                     android:onClick="addThreeForTeamB"
-                    android:text="+3 Points Basket"
-                    android:textSize="@dimen/buttons_size_text" />
+                    android:text="+3 Points Basket" />
 
                 <TextView
                     android:id="@+id/threePointBasketOfTeamB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="8dp"
-                    android:gravity="center_vertical"
-                    android:text="0" />
+                    style="@style/BasketTypeCounter"
+                    android:layout_marginRight="8dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -207,23 +133,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
+                    style="@style/BasketButtons"
                     android:onClick="addTwoForTeamB"
-                    android:text="+2 Points Basket"
-                    android:textSize="@dimen/buttons_size_text" />
+                    android:text="+2 Points Basket" />
 
                 <TextView
                     android:id="@+id/twoPointBasketOfTeamB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="8dp"
-                    android:gravity="center_vertical"
-                    android:text="0" />
+                    style="@style/BasketTypeCounter"
+                    android:layout_marginRight="8dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -232,23 +149,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
+                    style="@style/BasketButtons"
                     android:onClick="addOneForTeamB"
-                    android:text="+1 Point Basket"
-                    android:textSize="@dimen/buttons_size_text" />
+                    android:text="+1 Point Basket" />
 
                 <TextView
                     android:id="@+id/onePointBasketOfTeamB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="8dp"
-                    android:gravity="center_vertical"
-                    android:text="0" />
+                    style="@style/BasketTypeCounter"
+                    android:layout_marginRight="8dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -257,24 +165,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_weight="1"
+                    style="@style/BasketButtons"
                     android:onClick="addFoulToTeamB"
-                    android:text="+1 Foul"
-                    android:textSize="@dimen/buttons_size_text"
-                    android:id="@+id/button" />
+                    android:text="+1 Foul" />
 
                 <TextView
                     android:id="@+id/foulsOfTeamB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="8dp"
-                    android:gravity="center_vertical"
-                    android:text="0" />
+                    style="@style/BasketTypeCounter"
+                    android:layout_marginRight="8dp" />
             </LinearLayout>
         </LinearLayout>
 

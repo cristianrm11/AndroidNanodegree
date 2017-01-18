@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BasketBall Counter App</string>
+    <string name="tv_team_a">Team A</string>
+    <string name="tv_team_b">Team B</string>
 </resources>

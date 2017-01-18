@@ -11,18 +11,18 @@ import static com.example.android.courtcounter.R.id.foulsOfTeamA;
 import static com.example.android.courtcounter.R.id.foulsOfTeamB;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreTeamA = 0
-        ,foulsOfTeamA = 0
-        ,numberOfThreePointBasketForTeamA = 0
-        ,numberOfTwoPointBasketForTeamA = 0
-        ,numberOfOnePointBasketForTeamA = 0
-        ,numberOfFoulsTeamA = 0;
-    int scoreTeamB = 0
-        ,foulsOfTeamB = 0
-        ,numberOfThreePointBasketForTeamB = 0
-        ,numberOfTwoPointBasketForTeamB = 0
-        ,numberOfOnePointBasketForTeamB = 0
-        ,numberOfFoulsTeamB = 0;
+    int scoreTeamA = 0;
+    int foulsOfTeamA = 0;
+    int numberOfThreePointBasketForTeamA = 0;
+    int numberOfTwoPointBasketForTeamA = 0;
+    int numberOfOnePointBasketForTeamA = 0;
+    int numberOfFoulsTeamA = 0;
+    int scoreTeamB = 0;
+    int foulsOfTeamB = 0;
+    int numberOfThreePointBasketForTeamB = 0;
+    int numberOfTwoPointBasketForTeamB = 0;
+    int numberOfOnePointBasketForTeamB = 0;
+    int numberOfFoulsTeamB = 0;
 
     private static final char TEAM_A = 'A';
     private static final char TEAM_B = 'B';
@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void displayScoreForTeamA(int totalScore, int score){
+    private void displayScoreForTeamA(int totalScore, int score){
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(totalScore));
         incrementNumberOfBaskets(score, TEAM_A);
         displayNumberOfBasketPerTeam();
     }
 
-    public void displayNumberOfBasketPerTeam() {
+    private void displayNumberOfBasketPerTeam() {
         TextView numberOfBaskets = (TextView) findViewById(R.id.threePointBasketOfTeamA);
         numberOfBaskets.setText(String.valueOf(numberOfThreePointBasketForTeamA));
 
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Team B.
      */
-    public void displayScoreForTeamB(int totalScore, int score) {
+    private void displayScoreForTeamB(int totalScore, int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(totalScore));
         incrementNumberOfBaskets(score, TEAM_B);
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         displayFouls();
     }
 
-    public void incrementNumberOfBaskets(int number, char team){
+    private void incrementNumberOfBaskets(int number, char team){
         switch (number) {
             case 1:
                 if (team == 'A'){
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
         displayFouls();
     }
 
-    public void displayFouls(){
+    private void displayFouls(){
         TextView foul = (TextView) findViewById(R.id.foulsOfTeamA);
         foul.setText(String.valueOf(foulsOfTeamA));
 
